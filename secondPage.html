@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter - Futuristic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="converter-page">
+    <div class="stars" id="stars"></div>
+    
+    <div class="nav-bar">
+        <a href="index.html" class="nav-button">← Home</a>
+    </div>
+
+    <div class="converter-container-wrapper">
+        <h1 class="converter-title">Temperature Converter</h1>
+        
+        <div class="converter-main-container">
+            <div class="converter-input-group">
+                <label class="converter-input-label" id="input-label">Celsius</label>
+                <input type="number" id="temperature-input" class="converter-temperature-input" placeholder="Enter temperature">
+            </div>
+            
+            <div class="converter-conversion-buttons">
+                <button class="converter-convert-btn" id="celsius-to-fahrenheit">Celsius → Fahrenheit</button>
+                <button class="converter-convert-btn" id="fahrenheit-to-celsius">Fahrenheit → Celsius</button>
+            </div>
+            
+            <div class="converter-result-display" id="result-display">
+                Result will appear here
+            </div>
+            
+            <div class="converter-formula-display" id="formula-display">
+                Formula: °F = (°C × 9/5) + 32
+            </div>
+            
+            <div class="converter-switch-mode">
+                <button class="converter-switch-btn" id="switch-mode">Switch Input Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
