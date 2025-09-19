@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temperature Converter - Futuristic</title>
+    <title>BPM Tempo Checker - Music Analysis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="converter-page">
@@ -14,29 +14,64 @@
     </div>
 
     <div class="converter-container-wrapper">
-        <h1 class="converter-title">Temperature Converter</h1>
+        <h1 class="converter-title">BPM Tempo Checker</h1>
         
         <div class="converter-main-container">
             <div class="converter-input-group">
-                <label class="converter-input-label" id="input-label">Celsius</label>
-                <input type="number" id="temperature-input" class="converter-temperature-input" placeholder="Enter temperature">
+                <label class="converter-input-label" for="audio-file">Upload Audio File</label>
+                <input type="file" id="audio-file" class="converter-temperature-input" accept="audio/*">
+                <div class="file-info" id="file-info" style="display: none;">
+                    <p id="file-name"></p>
+                    <p id="file-size"></p>
+                </div>
             </div>
             
             <div class="converter-conversion-buttons">
-                <button class="converter-convert-btn" id="celsius-to-fahrenheit">Celsius → Fahrenheit</button>
-                <button class="converter-convert-btn" id="fahrenheit-to-celsius">Fahrenheit → Celsius</button>
+                <button class="converter-convert-btn" id="analyze-btn" disabled>Analyze BPM</button>
+                <button class="converter-convert-btn" id="play-btn" disabled>Play Audio</button>
             </div>
             
             <div class="converter-result-display" id="result-display">
-                Result will appear here
+                Upload an audio file to analyze its BPM
             </div>
             
             <div class="converter-formula-display" id="formula-display">
-                Formula: °F = (°C × 9/5) + 32
+                BPM (Beats Per Minute) represents the tempo of your music
+            </div>
+            
+            <div class="audio-controls" id="audio-controls" style="display: none;">
+                <div class="turntable-container">
+                    <div class="turntable">
+                        <div class="turntable-base">
+                            <div class="turntable-platter">
+                                <div class="vinyl-disc" id="vinyl-disc">
+                                    <div class="vinyl-center">
+                                        <div class="vinyl-label">
+                                            <div class="label-text">BPM</div>
+                                        </div>
+                                    </div>
+                                    <div class="vinyl-grooves"></div>
+                                </div>
+                                <div class="tonearm">
+                                    <div class="tonearm-base"></div>
+                                    <div class="tonearm-arm"></div>
+                                    <div class="tonearm-head"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <audio id="audio-player" controls style="width: 100%; margin-top: 20px;">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="progress-info">
+                    <p>Progress: <span id="progress-text">0:00 / 0:00</span></p>
+                </div>
             </div>
             
             <div class="converter-switch-mode">
-                <button class="converter-switch-btn" id="switch-mode">Switch Input Mode</button>
+                <button class="converter-switch-btn" id="reset-btn">Reset</button>
             </div>
         </div>
     </div>
