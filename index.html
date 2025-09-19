@@ -4,94 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Franco - Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body class="index-page">
-    <div class="index-container">
-        <header class="index-header">
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Welcome to My Personal Space</h1>
-                    <p class="index-subtitle">Exploring life through health, music, investments, and adventure</p>
-                </div>
-                <div class="header-photo">
-                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Music Production Studio" class="studio-photo">
-                </div>
-            </div>
-        </header>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <h1>Welcome to My Personal Space</h1>
+            <p class="subtitle">Exploring life through health, music, investments, and adventure</p>
+        </div>
+    </header>
 
-        <main class="index-content">
-            <section class="personal-info">
+    <main class="main-content">
+        <div class="container">
+            <section class="about-section">
                 <h2>About Me</h2>
                 <p>Hi, my name is Juan Franco. I am a software engineer and a music producer.</p>
-                
-                <div class="interests-grid">
-                    <div class="interest-section">
-                        <h3>🏃 Health & Wellness</h3>
-                        <ul>
-                            <li><strong>Diet Preferences:</strong> Focus on healthy eating, avoiding processed foods, sugary drinks, and milk</li>
-                            <li><strong>Greens:</strong> Arugula, kale, dark leafy greens</li>
-                            <li><strong>Proteins:</strong> Eggs, poultry, red meat, cod fish, wild salmon, turkey</li>
-                            <li><strong>Vegetables:</strong> Zucchini, brussels sprouts, carrots, broccoli, peas, asparagus</li>
-                            <li><strong>Carbs:</strong> Potatoes, sweet potatoes</li>
-                            <li><strong>Physical Activity:</strong> Gym 3-4 times a week, jogging for cardio</li>
-                            <li><strong>Goals:</strong> Eating for energy and health, maintaining an active lifestyle</li>
-                        </ul>
-                    </div>
+            </section>
 
-                    <div class="interest-section">
-                        <h3>🎵 Music & Audio Production</h3>
-                        <ul>
-                            <li><strong>Background:</strong> Recording Engineer and Music Production</li>
-                            <li><strong>Equipment:</strong> Microphones, Preamp, DAW, DA Converter, Analog Converter, Compressor, Equalizers, Maximizers</li>
-                            <li><strong>Software:</strong> ProTools (Avid) with extensive plugin collection</li>
-                            <li><strong>Skills:</strong> Recording, mixing, and producing music</li>
-                            <li><strong>Interests:</strong> Audio quality, production techniques, enhancing creativity through technology</li>
-                        </ul>
+            <section class="interests-grid">
+                <div class="interest-card">
+                    <div class="card-header">
+                        <span class="icon">🏃</span>
+                        <h3>Health & Wellness</h3>
                     </div>
+                    <ul>
+                        <li><strong>Diet Preferences:</strong> Focus on healthy eating, avoiding processed foods, sugary drinks, and milk</li>
+                        <li><strong>Greens:</strong> Arugula, kale, dark leafy greens</li>
+                        <li><strong>Proteins:</strong> Eggs, poultry, red meat, cod fish, wild salmon, turkey</li>
+                        <li><strong>Vegetables:</strong> Zucchini, brussels sprouts, carrots, broccoli, peas, asparagus</li>
+                        <li><strong>Carbs:</strong> Potatoes, sweet potatoes</li>
+                        <li><strong>Physical Activity:</strong> Gym 3-4 times a week, jogging for cardio</li>
+                        <li><strong>Goals:</strong> Eating for energy and health, maintaining an active lifestyle</li>
+                    </ul>
+                </div>
 
-                    <div class="interest-section">
-                        <h3>💰 Investments</h3>
-                        <ul>
-                            <li><strong>Stock Market:</strong> Traditional stock investments</li>
-                            <li><strong>Cryptocurrencies:</strong> Bitcoin, XRP, Solana, and others</li>
-                            <li><strong>Focus:</strong> Growth, diversification, and market speculation</li>
-                        </ul>
+                <div class="interest-card">
+                    <div class="card-header">
+                        <span class="icon">🎵</span>
+                        <h3>Music & Audio Production</h3>
                     </div>
+                    <ul>
+                        <li><strong>Background:</strong> Recording Engineer and Music Production</li>
+                        <li><strong>Equipment:</strong> Microphones, Preamp, DAW, DA Converter, Analog Converter, Compressor, Equalizers, Maximizers</li>
+                        <li><strong>Software:</strong> ProTools (Avid) with extensive plugin collection</li>
+                        <li><strong>Skills:</strong> Recording, mixing, and producing music</li>
+                        <li><strong>Interests:</strong> Audio quality, production techniques, enhancing creativity through technology</li>
+                    </ul>
+                </div>
 
-                    <div class="interest-section">
-                        <h3>⚽ Hobbies & Sports</h3>
-                        <ul>
-                            <li><strong>Sports:</strong> Basketball, Baseball, Tennis</li>
-                            <li><strong>Activities:</strong> Competitive games and teamwork-based activities</li>
-                            <li><strong>Outdoor:</strong> Exploring different locations, hiking, traveling</li>
-                        </ul>
+                <div class="interest-card">
+                    <div class="card-header">
+                        <span class="icon">💰</span>
+                        <h3>Investments</h3>
                     </div>
+                    <ul>
+                        <li><strong>Stock Market:</strong> Traditional stock investments</li>
+                        <li><strong>Cryptocurrencies:</strong> Bitcoin, XRP, Solana, and others</li>
+                        <li><strong>Focus:</strong> Growth, diversification, and market speculation</li>
+                    </ul>
+                </div>
 
-                    <div class="interest-section">
-                        <h3>🌍 Exploration & Activities</h3>
-                        <ul>
-                            <li><strong>Adventure:</strong> Discovering new places and outdoor spots</li>
-                            <li><strong>Travel:</strong> Road trips and nature-based activities</li>
-                            <li><strong>Experience:</strong> Engaging with new environments and challenges</li>
-                        </ul>
+                <div class="interest-card">
+                    <div class="card-header">
+                        <span class="icon">⚽</span>
+                        <h3>Hobbies & Sports</h3>
                     </div>
+                    <ul>
+                        <li><strong>Sports:</strong> Basketball, Baseball, Tennis</li>
+                        <li><strong>Activities:</strong> Competitive games and teamwork-based activities</li>
+                        <li><strong>Outdoor:</strong> Exploring different locations, hiking, traveling</li>
+                    </ul>
+                </div>
+
+                <div class="interest-card">
+                    <div class="card-header">
+                        <span class="icon">🌍</span>
+                        <h3>Exploration & Activities</h3>
+                    </div>
+                    <ul>
+                        <li><strong>Adventure:</strong> Discovering new places and outdoor spots</li>
+                        <li><strong>Travel:</strong> Road trips and nature-based activities</li>
+                        <li><strong>Experience:</strong> Engaging with new environments and challenges</li>
+                    </ul>
                 </div>
             </section>
 
-            <section class="demo-info">
+            <section class="website-info">
                 <h2>About This Website</h2>
                 <p>This is my personal website where I'll explore and document my experiences and journey through various interests and activities.</p>
-                
                 <a href="secondPage.html" class="cta-button">🎵 BPM Tempo Checker</a>
             </section>
-        </main>
+        </div>
+    </main>
 
-        <footer class="index-footer">
+    <footer class="footer">
+        <div class="container">
             <p>&copy; 2025 Juan Franco. Built with HTML & CSS.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
-    <script src="script.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
